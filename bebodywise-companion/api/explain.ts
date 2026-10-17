@@ -1,7 +1,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { z } from "zod";
 import type { VercelRequest, VercelResponse } from "@vercel/node";
-import { products } from "../src/data/products";
+import { products } from "../src/data/products.js";
 
 const requestSchema = z.object({
   productId: z.string().min(1).max(100),
